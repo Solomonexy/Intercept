@@ -22,7 +22,9 @@ local Window = Rayfield:CreateWindow({
 		FileName = "InterceptKey",
 		SaveKey = true,
 		GrabKeyFromSite = false, 
-		Key = "interceptontop"
+		Key = "interceptontop" 
+		
+
 	}
 })
 
@@ -59,6 +61,36 @@ local Button = Main:CreateButton({
 	Name = "Bypass FallenPartsDestroyHeight",
 	Callback = function()
         workspace.FallenPartsDestroyHeight = 0/0
+	end,
+})
+
+local Button = Main:CreateButton({
+	Name = "Rejoin",
+	Callback = function()
+        local ts = game:GetService("TeleportService")
+        local p = game:GetService("Players").LocalPlayer
+        ts:Teleport(game.PlaceId, p)
+	end,
+})
+
+local Button = Main:CreateButton({
+	Name = "Force Kick",
+	Callback = function()
+		Rayfield:Notify({
+			Title = "Confirmation",
+			Content = "Are You Sure You Would Like To Kick Yourself?",
+			Duration = 3,
+			Image = 4483362458,
+			Actions = { -- Notification Buttons
+				Ignore = {
+					Name = "Confirm",
+					Callback = function()
+					    game.Players.LocalPlayer:Kick("You have been forcefully kicked!")
+					end
+				},
+			},
+		})
+
 	end,
 })
 
