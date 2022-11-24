@@ -115,13 +115,6 @@ local Button = ScriptTab:CreateButton({
 })
 
 local Button = ScriptTab:CreateButton({
-	Name = "Spiderman",
-	Callback = function()
-        loadstring(game:HttpGet('https://pastebin.com/raw/3XqvBJVx'))()
-	end,
-})
-
-local Button = ScriptTab:CreateButton({
 	Name = "Hat Orbit",
 	Callback = function()
         loadstring(game:HttpGet('https://pastebin.com/raw/4B4fktPS'))()
