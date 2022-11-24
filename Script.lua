@@ -22,9 +22,11 @@ local Window = Rayfield:CreateWindow({
 		FileName = "InterceptKey",
 		SaveKey = true,
 		GrabKeyFromSite = false, 
-		Key = "0x39261"
+		Key = "interceptontop"
 	}
 })
+
+
 
 -- Main
 
@@ -74,11 +76,48 @@ local Button = ScriptTab:CreateButton({
 })
 
 local Button = ScriptTab:CreateButton({
-	Name = "Sniper Fling",
+	Name = "FE Dance",
 	Callback = function()
-        loadstring(game:HttpGetAsync("https://pastebin.com/raw/njZ8eDjS"))()
+        loadstring(game:HttpGet('https://gist.githubusercontent.com/1BlueCat/e51327540d1ba5ede244c459dbdb5a0e/raw/6320fe344ac51a311ef7c9f8d5c3924b1a7c3969/Krystal%2520Dance'))()
 	end,
 })
+
+-- Brazil Scripts
+
+local brazil = Window:CreateTab("Brazil", 4483362458) 
+
+local Section = brazil:CreateSection("YOUR GOING TO BRAZIL!")
+
+local Button = brazil:CreateButton({
+	Name = "Touch Fling",
+	Callback = function()
+        _G.KeyCode = "X"
+        loadstring(game:HttpGet("https://shattered-gang.lol/scripts/fe/touch_fling.lua"))()
+	end,
+})
+
+local Button = brazil:CreateButton({
+	Name = "Scp 173 (HATS NEEDED)",
+	Callback = function()
+        _G.KeyCode = "X"
+        loadstring(game:HttpGet("https://shattered-gang.lol/scripts/fe/fe_scp_173.lua"))()
+	end,
+})
+
+local Button = brazil:CreateButton({
+	Name = "Sniper Fling (HATS NEEDED)",
+	Callback = function()
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/njZ8eDjS"))()
+	end,
+})
+
+local Button = brazil:CreateButton({
+	Name = "FE Waiter (HATS NEEDED)",
+	Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/kakabok1233453/asdasda/main/The Waiter'),true))()
+	end,
+})
+
 
 -- SCRIPT HUBS
 
