@@ -121,6 +121,14 @@ local Button = ScriptTab:CreateButton({
 	end,
 })
 
+local Button = ScriptTab:CreateButton({
+	Name = "Neko Maid",
+	Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/8AnW582j'))()
+	end,
+})
+
+
 -- Brazil Scripts
 
 local brazil = Window:CreateTab("Brazil", 4483362458) 
