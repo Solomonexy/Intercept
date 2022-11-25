@@ -22,7 +22,7 @@ local Window = Rayfield:CreateWindow({
 		FileName = "InterceptKey",
 		SaveKey = true,
 		GrabKeyFromSite = false, 
-		Key = "interceptontop" 
+		Key = "ohiomoment" 
 		
 
 	}
@@ -125,6 +125,13 @@ local Button = ScriptTab:CreateButton({
 	Name = "Pen",
 	Callback = function()
         loadstring(game:HttpGetAsync("https://pastebin.com/raw/1qcpeuDm"))()
+	end,
+})
+
+local Button = ScriptTab:CreateButton({
+	Name = "Snaik",
+	Callback = function()
+        loadstring(game:HttpGet(('https://pastefy.ga/tWBTcE4R/raw'),true))()
 	end,
 })
 
