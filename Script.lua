@@ -53,7 +53,7 @@ local Button = Main:CreateButton({
 local Button = Main:CreateButton({
 	Name = "AntiBring",
 	Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/Yk2mRFaM", true))() 
+        loadstring(game:HttpGet("pastebin.com/raw/XSHEUNwn", true))() 
 	end,
 })
 
