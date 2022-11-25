@@ -157,6 +157,13 @@ local Button = brazil:CreateButton({
 })
 
 local Button = brazil:CreateButton({
+	Name = "Exotic Lighting",
+	Callback = function()
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Solomonexy/EL/main/Exotic%20Lighting.lua"))()
+	end,
+})
+
+local Button = brazil:CreateButton({
 	Name = "Scp 173 [HATS NEEDED]",
 	Callback = function()
         _G.KeyCode = "X"
@@ -171,20 +178,13 @@ local Button = brazil:CreateButton({
 	end,
 })
 
-local Button = brazil:CreateButton({
-	Name = "Exotic Lighting",
-	Callback = function()
-        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Solomonexy/EL/main/Exotic%20Lighting.lua"))()
-	end,
-})
 
 local Button = brazil:CreateButton({
-	Name = "Sword Fling",
+	Name = "Sword Fling [HATS NEEDED]",
 	Callback = function()
         loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Solomonexy/sendpeopletobrazil/main/brazil.lua"))()
 	end,
 })
-
 
 local Button = brazil:CreateButton({
 	Name = "FE Waiter [HATS NEEDED]",
