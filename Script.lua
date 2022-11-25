@@ -44,6 +44,13 @@ local Button = Main:CreateButton({
 })
 
 local Button = Main:CreateButton({
+	Name = "Die",
+	Callback = function()
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	end,
+})
+
+local Button = Main:CreateButton({
 	Name = "Full Bright",
 	Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/06iG6YkU", true))() 
@@ -141,6 +148,14 @@ local Button = ScriptTab:CreateButton({
         loadstring(game:HttpGet(('https://pastebin.com/raw/EJskzezp')))()
 	end,
 })
+
+local Button = ScriptTab:CreateButton({
+	Name = "Hold Hats",
+	Callback = function()
+        loadstring(game:HttpGet(('pastebin.com/raw/rPrxr7Lw')))()
+	end,
+})
+
 
 
 -- Brazil Scripts
