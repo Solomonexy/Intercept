@@ -136,11 +136,12 @@ local Button = ScriptTab:CreateButton({
 })
 
 local Button = ScriptTab:CreateButton({
-	Name = "FE Waiter [HATS NEEDED]",
+	Name = "Ball Spin",
 	Callback = function()
-        loadstring(game:HttpGet(('https://raw.githubusercontent.com/kakabok1233453/asdasda/main/The Waiter'),true))()
+        loadstring(game:HttpGet(('https://pastebin.com/raw/EJskzezp')))()
 	end,
 })
+
 
 -- Brazil Scripts
 
@@ -168,6 +169,13 @@ local Button = brazil:CreateButton({
 	Name = "Sniper Fling [HATS NEEDED]",
 	Callback = function()
 		loadstring(game:HttpGetAsync("https://pastebin.com/raw/njZ8eDjS"))()
+	end,
+})
+
+local Button = brazil:CreateButton({
+	Name = "FE Waiter [HATS NEEDED]",
+	Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/kakabok1233453/asdasda/main/The Waiter'),true))()
 	end,
 })
 
