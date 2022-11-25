@@ -172,6 +172,14 @@ local Button = brazil:CreateButton({
 })
 
 local Button = brazil:CreateButton({
+	Name = "Exotic Lighting",
+	Callback = function()
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Solomonexy/EL/main/Exotic%20Lighting.lua"))()
+	end,
+})
+
+
+local Button = brazil:CreateButton({
 	Name = "FE Waiter [HATS NEEDED]",
 	Callback = function()
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/kakabok1233453/asdasda/main/The Waiter'),true))()
