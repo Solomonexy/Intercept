@@ -178,6 +178,13 @@ local Button = brazil:CreateButton({
 	end,
 })
 
+local Button = brazil:CreateButton({
+	Name = "Sword Fling",
+	Callback = function()
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Solomonexy/sendpeopletobrazil/main/brazil.lua"))()
+	end,
+})
+
 
 local Button = brazil:CreateButton({
 	Name = "FE Waiter [HATS NEEDED]",
