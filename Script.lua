@@ -46,7 +46,7 @@ local Button = Main:CreateButton({
 local Button = Main:CreateButton({
 	Name = "Full Bright",
 	Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/06iG6YkU", true))() 
+        loadstring(game:HttpGet("https://pastebin.com/raw/06iG6YkU"))() 
 	end,
 })
 
