@@ -150,7 +150,7 @@ local Button = brazil:CreateButton({
 })
 
 local Button = brazil:CreateButton({
-	Name = "Scp 173 (HATS NEEDED)",
+	Name = "Scp 173 [HATS NEEDED]",
 	Callback = function()
         _G.KeyCode = "X"
         loadstring(game:HttpGet("https://shattered-gang.lol/scripts/fe/fe_scp_173.lua"))()
@@ -158,7 +158,7 @@ local Button = brazil:CreateButton({
 })
 
 local Button = brazil:CreateButton({
-	Name = "Sniper Fling (HATS NEEDED)",
+	Name = "Sniper Fling [HATS NEEDED]",
 	Callback = function()
 		loadstring(game:HttpGetAsync("https://pastebin.com/raw/njZ8eDjS"))()
 	end,
@@ -172,21 +172,21 @@ local Section = hubs:CreateSection("Hubs")
 
 
 local Button = hubs:CreateButton({
-	Name = "Simplity (UNIVERSAL)",
+	Name = "Simplity [UNIVERSAL]",
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/HeyGyt/simplityv2/main/main"))()
 	end,
 })
 
 local Button = hubs:CreateButton({
-	Name = "Tiger Admin (PRISON LIFE)",
+	Name = "Tiger Admin [PRISON LIFE]",
 	Callback = function()
         loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/H17S32/A0UA/main/OLD"))()
 	end,
 })
 
 local Button = hubs:CreateButton({
-	Name = "Nullware Hub (UNIVERSAL)",
+	Name = "Nullware Hub [UNIVERSAL]",
 	Callback = function()
 		local LocalPlayer = game:GetService("Players").LocalPlayer
 local Heartbeat = game:GetService("RunService").Heartbeat
@@ -198,18 +198,28 @@ loadstring(game:HttpGet("https://gist.githubusercontent.com/M6HqVBcddw2qaN4s/2d7
 	end,
 })
 
+local Button = hubs:CreateButton({
+	Name = "Infinite Yield [UNIVERSAL]",
+	Callback = function()
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+	end,
+})
 
-local Button = ScriptTab:CreateButton({
+local Button = hubs:CreateButton({
+	Name = "Septex [PRISON LIFE]",
+	Callback = function()
+        game.Players.LocalPlayer:Kick("LMFAO IMAGINE USING SEPTEX YOU SKID 🤡🤡🤡")
+	end,
+})
+
+
+-- ONE PUNCH MAN!
+
+local Button = brazil:CreateButton({
 	Name = "One Punch Man [HATS NEEDED]",
 	Callback = function()
         print('Saitama Made by mugaga#2801')
---Saitama
---Made by mugaga#2801
---For The Script To Execute You Need:
---https://web.roblox.com/catalog/6470135113/Fan-Hand-Sign-Why-Dont-We-WDW
---R - Main Idle
---E - Barrage
---Click - Punch
+
 for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
 if v:IsA("BasePart") and v.Name ~="HumanoidRootPart" then 
 game:GetService("RunService").Heartbeat:connect(function()
@@ -228,9 +238,6 @@ local HatChar = game.Players.LocalPlayer.Character
 local Hat = HatChar:FindFirstChild("WDW_FoamFinger")
 
 Hat.Handle.SpecialMesh:Destroy()
-
-
-
 
 HumanDied = false
 local reanim
