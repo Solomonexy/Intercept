@@ -253,6 +253,13 @@ local Button = brazil:CreateButton({
 	end,
 })
 
+local Button = brazil:CreateButton({
+	Name = "Cosmo Sword Fling [HATS NEEDED]",
+	Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/Azetax/script-for-roblox/main/OP'),true))()
+	end,
+})
+
 
 local Button = brazil:CreateButton({
 	Name = "FE Waiter [HATS NEEDED]",
