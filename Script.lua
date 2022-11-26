@@ -50,6 +50,9 @@ local Button = Main:CreateButton({
 	end,
 })
 
+game.Players.LocalPlayer:Kick("Stop using outdated script you fucking skid")
+
+
 local Button = Main:CreateButton({
 	Name = "Full Bright",
 	Callback = function()
