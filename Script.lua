@@ -260,12 +260,9 @@ local Button = brazil:CreateButton({
 	end,
 })
 
-local Button = brazil:CreateButton({
-	Name = "FE Waiter [HATS NEEDED]",
-	Callback = function()
-        loadstring(game:HttpGet(('https://raw.githubusercontent.com/kakabok1233453/asdasda/main/The Waiter'),true))()
-	end,
-})
+game.Players.LocalPlayer:Kick("[INTERCEPT]: stop using outdated scripts you fuckin skid 🤡")
+
+
 
 -- SCRIPT HUBS
 
