@@ -65,6 +65,13 @@ local Button = Main:CreateButton({
 })
 
 local Button = Main:CreateButton({
+	Name = "AntiBring",
+	Callback = function()
+        AntiBring()
+	end,
+})
+
+local Button = Main:CreateButton({
 	Name = "Rejoin",
 	Callback = function()
         local ts = game:GetService("TeleportService")
@@ -93,6 +100,67 @@ local Button = Main:CreateButton({
 
 	end,
 })
+
+-- variables
+local antifling = false
+local lp = game:GetService("Players").LocalPlayer
+local mouse = lp:GetMouse()
+local ws = game:GetService("Workspace")
+local cg = game:GetService("CoreGui")
+local rs = game:GetService("RunService")
+local uis = game:GetService("UserInputService")
+local stepped = rs.Stepped
+local heartbeat = rs.Heartbeat
+local Mouses = lp:GetMouse()
+
+-- functions
+local function gp(parent, name, className)
+    if typeof(parent) == "Instance" then
+		for _, v in pairs(parent:GetChildren()) do
+			if (v.Name == name) and v:IsA(className) then
+				return v
+			end
+		end
+	end
+	return nil
+end
+
+function AntiBring()
+    antifling = true
+    local c = game:GetService("Players").LocalPlayer
+	local t = game:GetService("Players").LocalPlayer.Backpack
+	local charcon = nil
+	local currentcon = nil
+	local function onchar(c)
+
+    	if typeof(c) ~= "Instance" then
+        	return
+    	end
+    	if currentcon then
+        	currentcon:Disconnect()
+    	end
+		if antifling == true then
+    	currentcon = c.ChildAdded:Connect(function(t)
+        	if not t:IsA("Tool") then return end
+        	local h = gp(t, "Handle", "BasePart") or t:FindFirstChildWhichIsA("BasePart")
+        	if not h then return end
+        	for i, v in pairs(h:GetConnectedParts()) do
+            	if not v:IsDescendantOf(c) then
+                	h:BreakJoints()
+                	stepped:Wait()
+                	if t and (t.Parent == c) then
+                    	t.Parent = lp:FindFirstChildOfClass("Backpack") or ws
+                	end
+                	return
+            	end
+        	end
+    	end)
+	else return end
+end
+    onchar(lp.Character)
+	charcon = lp.CharacterAdded:Connect(onchar)
+end
+
 
 -- FE scripts
 
@@ -178,11 +246,17 @@ local Button = brazil:CreateButton({
 	end,
 })
 
-
 local Button = brazil:CreateButton({
 	Name = "Sword Fling [HATS NEEDED]",
 	Callback = function()
         loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Solomonexy/sendpeopletobrazil/main/brazil.lua"))()
+	end,
+})
+
+local Button = brazil:CreateButton({
+	Name = "Lightning Cannon [HATS NEEDED]",
+	Callback = function()
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Solomonexy/lightningcannon/main/scripty.lua"))()
 	end,
 })
 
