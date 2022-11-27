@@ -232,13 +232,6 @@ local Button = ScriptTab:CreateButton({
 	end,
 })
 
-local Button = ScriptTab:CreateButton({
-	Name = "Nerd Quote",
-	Callback = function()
-        loadstring(game:HttpGet(("https://raw.githubusercontent.com/%s/%s/main/NerdQuote.lua"):format("78n","Amity")))()
-	end,
-})
-
 -- Brazil Scripts
 
 local brazil = Window:CreateTab("Brazil", 4483362458) 
