@@ -104,21 +104,7 @@ local Button = Main:CreateButton({
 local Button = Main:CreateButton({
 	Name = "Save Game",
 	Callback = function()
-		Rayfield:Notify({
-			Title = "Copy Experience",
-			Content = "Are You Sure?",
-			Duration = 3,
-			Image = 4483362458,
-			Actions = { -- Notification Buttons
-				Ignore = {
-					Name = "Yes, Im Sure.",
-					Callback = function()
-						saveinstance()
-					end
-				},
-			},
-		})
-
+			saveinstance()
 	end,
 })
 
