@@ -101,6 +101,28 @@ local Button = Main:CreateButton({
 	end,
 })
 
+local Button = Main:CreateButton({
+	Name = "Save Game",
+	Callback = function()
+		Rayfield:Notify({
+			Title = "Copy Experience",
+			Content = "Are You Sure?",
+			Duration = 3,
+			Image = 4483362458,
+			Actions = { -- Notification Buttons
+				Ignore = {
+					Name = "Yes, Im Sure.",
+					Callback = function()
+						saveinstance()
+					end
+				},
+			},
+		})
+
+	end,
+})
+
+
 -- variables
 local antifling = false
 local lp = game:GetService("Players").LocalPlayer
@@ -210,6 +232,13 @@ local Button = ScriptTab:CreateButton({
 	end,
 })
 
+local Button = ScriptTab:CreateButton({
+	Name = "Nerd Quote",
+	Callback = function()
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/%s/%s/main/NerdQuote.lua"):format("78n","Amity")))()
+	end,
+})
+
 -- Brazil Scripts
 
 local brazil = Window:CreateTab("Brazil", 4483362458) 
@@ -254,12 +283,11 @@ local Button = brazil:CreateButton({
 })
 
 local Button = brazil:CreateButton({
-	Name = "Cosmo Sword Fling [HATS NEEDED]",
+	Name = "Lightning Cannon [HATS NEEDED]",
 	Callback = function()
-        loadstring(game:HttpGet(('https://raw.githubusercontent.com/Azetax/script-for-roblox/main/OP'),true))()
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Solomonexy/lightningcannon/main/scripty.lua"))()
 	end,
 })
-
 
 local Button = brazil:CreateButton({
 	Name = "FE Waiter [HATS NEEDED]",
