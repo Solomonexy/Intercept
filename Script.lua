@@ -1,13 +1,13 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 
 local Window = Rayfield:CreateWindow({
-	Name = "Intercept Hub",
+	Name = "Inception Hub",
 	LoadingTitle = "Loading FE Scripts",
 	LoadingSubtitle = "We Do A Little Trolling",
 	ConfigurationSaving = {
 		Enabled = true,
 		FolderName = nil, 
-		FileName = "Intercept"
+		FileName = "Inception"
 	  },
         Discord = {
         	Enabled = false,
@@ -27,8 +27,6 @@ local Window = Rayfield:CreateWindow({
 
 	}
 })
-
-
 
 -- Main
 
