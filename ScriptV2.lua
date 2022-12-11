@@ -218,6 +218,24 @@ local Button = ScriptTab:CreateButton({
 	end,
 })
 
+
+local Button = ScriptTab:CreateButton({
+	Name = "Become Dog",
+	Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/Solomonexy/BecomeDog/main/DOG%3F.lua'))()
+	end,
+})
+	
+local Button = ScriptTab:CreateButton({
+	Name = "Pet Dog [HATS NEEDED]",
+	Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/Solomonexy/Dog/main/God.lua'))()
+	end,
+})
+
+
+
+
 -- Brazil Scripts
 
 local brazil = Window:CreateTab("Brazil", 4483362458) 
@@ -274,6 +292,16 @@ local Button = brazil:CreateButton({
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/kakabok1233453/asdasda/main/The Waiter'),true))()
 	end,
 })
+		
+
+local Button = brazil:CreateButton({
+	Name = "Zambie [HATS NEEDED]",
+	Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/kakabok1233453/asdasda/main/The Waiter'),true))()
+	end,
+})
+		
+
 
 -- SCRIPT HUBS
 
