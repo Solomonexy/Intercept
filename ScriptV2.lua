@@ -265,9 +265,9 @@ local brazil = Window:CreateTab("Brazil", 4483362458)
 local Section = brazil:CreateSection("YOUR GOING TO BRAZIL!")
 
 local Button = brazil:CreateButton({
-	Name = "Touch Fling",
+	Name = "No Touchey",
 	Callback = function()
-        _G.KeyCode = "X"
+        _G.KeyCode = "E"
         loadstring(game:HttpGet("https://shattered-gang.lol/scripts/fe/touch_fling.lua"))()
 	end,
 })
