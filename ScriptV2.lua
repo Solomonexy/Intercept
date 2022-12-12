@@ -233,7 +233,7 @@ local Button = ScriptTab:CreateButton({
 local Button = ScriptTab:CreateButton({
 	Name = "Eggdog Car [HATS NEEDED]",
 	Callback = function()
-	    
+	    loadstring(game:HttpGet('https://raw.githubusercontent.com/Solomonexy/Eggdog/main/e%20g%20g.lua'))()
 	end,
 })
 
@@ -247,7 +247,7 @@ local Button = ScriptTab:CreateButton({
 local Button = ScriptTab:CreateButton({
 	Name = "Big Box V2 [HATS NEEDED]",
 	Callback = function()
-	    loadstring(game:HttpGet('https://raw.githubusercontent.com/MonkoTubeYT/carscript/master/!carscript.lua',true))()
+	    loadstring(game:HttpGet('https://raw.githubusercontent.com/Solomonexy/block/main/MyamazonPackage.lua',true))()
 	end,
 })
 
