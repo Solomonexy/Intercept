@@ -230,6 +230,34 @@ local Button = ScriptTab:CreateButton({
 	end,
 })
 
+local Button = ScriptTab:CreateButton({
+	Name = "Eggdog Car [HATS NEEDED]",
+	Callback = function()
+	    
+	end,
+})
+
+local Button = ScriptTab:CreateButton({
+	Name = "Race Car [HATS NEEDED]",
+	Callback = function()
+	    loadstring(game:HttpGet('https://raw.githubusercontent.com/MonkoTubeYT/carscript/master/!carscript.lua',true))()
+	end,
+})
+
+local Button = ScriptTab:CreateButton({
+	Name = "Big Box V2 [HATS NEEDED]",
+	Callback = function()
+	    loadstring(game:HttpGet('https://raw.githubusercontent.com/MonkoTubeYT/carscript/master/!carscript.lua',true))()
+	end,
+})
+
+local Button = ScriptTab:CreateButton({
+	Name = "TONK [HATS NEEDED]",
+	Callback = function()
+	    loadstring(game:HttpGet('https://raw.githubusercontent.com/MonkoTubeYT/carscript/master/!carscript.lua',true))()
+	end,
+})
+
 -- Brazil Scripts
 
 local brazil = Window:CreateTab("Brazil", 4483362458) 
