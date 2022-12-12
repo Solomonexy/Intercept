@@ -252,9 +252,9 @@ local Button = ScriptTab:CreateButton({
 })
 
 local Button = ScriptTab:CreateButton({
-	Name = "TONK [HATS NEEDED]",
+	Name = "Skateboard [HATS NEEDED]",
 	Callback = function()
-	    loadstring(game:HttpGet('https://raw.githubusercontent.com/MonkoTubeYT/carscript/master/!carscript.lua',true))()
+	    loadstring(game:HttpGet("https://pastebin.com/raw/XAXCaupJ"))()
 	end,
 })
 
