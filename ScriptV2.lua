@@ -217,6 +217,13 @@ local Button = ScriptTab:CreateButton({
 })
 
 local Button = ScriptTab:CreateButton({
+	Name = "Edgelord",
+	Callback = function()
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Solomonexy/Nameless/main/Edgelord.lua"))()
+	end,
+})
+
+local Button = ScriptTab:CreateButton({
 	Name = "Pet Dog [HATS NEEDED]",
 	Callback = function()
 	    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Solomonexy/Dog/main/God.lua'),true))()
