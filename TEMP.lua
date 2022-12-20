@@ -22,7 +22,7 @@ local Window = Rayfield:CreateWindow({
 		FileName = "InterceptKey",
 		SaveKey = true,
 		GrabKeyFromSite = false, 
-		Key = "0x9493381"
+		Key = "NoBitches?"
 		
 
 	}
@@ -33,6 +33,8 @@ local Window = Rayfield:CreateWindow({
 local Main = Window:CreateTab("Main", 4483362458) 
 
 local Section = Main:CreateSection("Main")
+
+local Paragraph = Main:CreateParagraph({Title = "Paninless V3 | Temporary Key", Content = "Welcome To Painless V3!"})
 
 local Button = Main:CreateButton({
 	Name = "Destroy",
@@ -75,34 +77,6 @@ local Button = Main:CreateButton({
         local ts = game:GetService("TeleportService")
         local p = game:GetService("Players").LocalPlayer
         ts:Teleport(game.PlaceId, p)
-	end,
-})
-
-local Button = Main:CreateButton({
-	Name = "Force Kick",
-	Callback = function()
-		Rayfield:Notify({
-			Title = "Confirmation",
-			Content = "Are You Sure You Would Like To Kick Yourself?",
-			Duration = 3,
-			Image = 4483362458,
-			Actions = { -- Notification Buttons
-				Ignore = {
-					Name = "Confirm",
-					Callback = function()
-					    game.Players.LocalPlayer:Kick("You have been forcefully kicked!")
-					end
-				},
-			},
-		})
-
-	end,
-})
-
-local Button = Main:CreateButton({
-	Name = "Save Game",
-	Callback = function()
-			saveinstance()
 	end,
 })
 
