@@ -22,7 +22,7 @@ local Window = Rayfield:CreateWindow({
 		FileName = "InterceptKey",
 		SaveKey = true,
 		GrabKeyFromSite = false, 
-		Key = "ohiomoment" 
+		Key = "ohiomoment", "BT79Q-G7N6G-PGBYW-4YWX6-6F4BT"
 		
 
 	}
