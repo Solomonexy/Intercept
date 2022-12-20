@@ -78,35 +78,6 @@ local Button = Main:CreateButton({
 	end,
 })
 
-local Button = Main:CreateButton({
-	Name = "Force Kick",
-	Callback = function()
-		Rayfield:Notify({
-			Title = "Confirmation",
-			Content = "Are You Sure You Would Like To Kick Yourself?",
-			Duration = 3,
-			Image = 4483362458,
-			Actions = { -- Notification Buttons
-				Ignore = {
-					Name = "Confirm",
-					Callback = function()
-					    game.Players.LocalPlayer:Kick("You have been forcefully kicked!")
-					end
-				},
-			},
-		})
-
-	end,
-})
-
-local Button = Main:CreateButton({
-	Name = "Save Game",
-	Callback = function()
-			saveinstance()
-	end,
-})
-
-
 -- variables
 local antifling = false
 local lp = game:GetService("Players").LocalPlayer
